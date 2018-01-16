@@ -5,6 +5,11 @@ class MarsApplication {
         spirit.speed = 2;
         spirit.temperature = -60;
         
+        MarsRobot opportunity = new MarsRobot();
+        opportunity.status = "sen";
+        opportunity.speed = 0;
+        opportunity.temperature = 0;
+        
         spirit.showAttributes();
         System.out.println("Zwiększenie predkości do 3.");
         spirit.speed = 3;
@@ -15,5 +20,7 @@ class MarsApplication {
         System.out.println("Sprawdzenie temperatury.");
         spirit.checkTemperature();
         spirit.showAttributes();
+        
+        opportunity.showAttributes();
     }
 }
